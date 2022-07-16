@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <form>
+        <p>Как меня зовут?<br>
+          <label>
+            <input type="radio" name="myname" value="Гоша">
+            Гоша</label>
+          <br>
+          <label>
+            <input type="radio" name="myname" value="Олег">
+            Олег</label>
+          <br>
+          <label>
+            <input type="radio" name="myname" value="Ваня">
+            Ваня</label>
+          <br>
+          <label>
+            <input type="radio" name="myname" value="Забыл">
+            Забыл</label>
+        </p>
+        <label for="street">Самая длинная улица в городе?</label><br>
+        <select name="street" id="select">
+          <option value="0"></option>
+          <option value="Алапаевец">Алапаевец</option>
+          <option value="Московская">Московская</option>
+        </select>
+        <p>Осадки это:<br>
+          <label>
+            <input type="checkbox" name="precipitation[]" value="Дождь">
+            Дождь</label>
+          <br>
+          <label>
+            <input type="checkbox" name="precipitation[]" value="Снег">
+            Снег</label>
+          <br>
+          <label>
+            <input type="checkbox" name="precipitation[]" value="Кирпич">
+            Кирпич</label>
+          <br>
+        </p>
+        <p>
+          <input type="button" id="calc" value="Подсчитать результаты">
+          <input type="reset" value="Сброс">
+        </p>
+          Итого баллов: <input type="text" name="result" readonly>
+      </form>
+</body>
+</html>
